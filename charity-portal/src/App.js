@@ -15,37 +15,39 @@ import Register from "./components/Register";
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Start</Link>
-            </li>
-            <li>
-              <Link to="/oddaj-rzeczy">Oddaj rzeczy</Link>
-            </li>
-            <li>
-              <Link to="/logowanie">Zaloguj</Link>
-            </li>
-            <li>
-              <Link to="/rejestracja">Załóż konto</Link>
-            </li>
-            <li>
-              <Link to="/wylogowano">Wylogowano</Link>
-            </li>
-          </ul>
-        </nav>
+    <div className="app">
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Start</Link>
+              </li>
+              <li>
+                <Link to="/oddaj-rzeczy">Oddaj rzeczy</Link>
+              </li>
+              <li>
+                <Link to="/logowanie">Zaloguj</Link>
+              </li>
+              <li>
+                <Link to="/rejestracja">Załóż konto</Link>
+              </li>
+              <li>
+                <Link to="/wylogowano">Wylogowano</Link>
+              </li>
+            </ul>
+          </nav>
 
-        <Switch>
-          <Route path="/" exact component={Home}></Route>
-          <Route path="/oddaj-rzeczy" component={Donate}></Route>
-          <Route path="/logowanie" component={LogIn}></Route>
-          <Route path="/rejestracja" component={Register}></Route>
-          <Route path="/wylogowano" component={LogOut}></Route>
-        </Switch>
-      </div>
-    </Router>
+          <Switch>
+            <Route path="/" exact component={Home}></Route>
+            <Route path="/oddaj-rzeczy" component={Donate}></Route>
+            <Route path="/logowanie" component={LogIn}></Route>
+            <Route path="/rejestracja" component={Register}></Route>
+            <Route path="/wylogowano" component={LogOut}></Route>
+          </Switch>
+        </div>
+      </Router>
+    </div>
   );
 }
 
