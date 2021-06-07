@@ -1,6 +1,10 @@
 @import "./settings/colors";
 @import "./settings/fonts";
 
+.app {
+    font-family: $font-base;
+}
+
 .home-container {
     width: 1900px;
     margin: 0 auto;
@@ -59,7 +63,7 @@
     font-family: $font-base;
     color: $color-base;
     height: 963px;
-    border: 2px solid red;
+    // border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,20 +109,20 @@
         padding-top: 46px;
         border-radius: 5px;
     }
+}
 
-    .homeheader-btn {
-        width: 310px;
-        height: 120px;
-        border: 0.75px solid $color-base;
-        color: $color-base;
-        font-size: 36px;
-        background: none;
+.homeheader-btn {
+    width: 310px;
+    height: 120px;
+    border: 0.75px solid $color-base;
+    color: $color-base;
+    font-size: 36px;
+    background: none;
 
-        a {
-            text-decoration: none;
-            &:visited {
-                color: $color-light;
-            }
+    a {
+        text-decoration: none;
+        &:visited {
+            color: $color-light;
         }
     }
 }
@@ -127,7 +131,7 @@
 
 .three-col-container {
     height: 380px;
-    border: 2px solid blue;
+    // border: 2px solid blue;
     font-family: $font-base;
 
 
@@ -170,5 +174,136 @@
             font-size: 16px;
             text-align: center;
         }
+    }
+}
+
+//four steps
+
+.steps-container {
+    color: $color-base;
+    // border: 2px solid red;
+    height: 675px;
+
+    .steps-title {
+        font-size: 38px;
+        text-align: center;
+        letter-spacing: -0.76px;
+        margin: 52px 0 20px 0px;
+    }
+
+    .ornament-steps {
+        width: 275px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .icon-steps {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-steps-shirt {
+        height: 80px;
+    }
+    
+    .icon-steps-bag {
+        height: 75px;
+    }
+
+    .icon-steps-search {
+        height: 73px;
+    }
+
+    .icon-steps-arrows {
+        height: 65px;
+    }
+
+    .four-steps {
+        text-align: center;
+        margin: 45px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 325px;
+        background-color: $color-bg;
+
+        .step {
+            padding: 55px 60px;
+        
+            span {
+              font-size: 18px;
+              display: block;
+              padding: 15px 0 0 0;
+
+              &::after {
+                  content: "-------------------";
+                  display: block;
+                  letter-spacing: -2px;
+                  color: $color-light;
+                  margin-top: 3px;
+              }
+            }
+
+            .search-step {
+                padding: 0;
+            }
+
+            p {
+              font-size: 16px;
+              width: 149px;
+              margin-top: 5px;
+            }
+        }
+    }
+
+    .steps-btn-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//about us section
+
+.about-container {
+    height: 935px;
+    display: flex;
+    margin-top: 75px;
+
+    .about-text {
+        flex: 1;
+        color: $color-base;
+        background-color: $color-bg;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h4 {
+            font-size: 38px;
+            letter-spacing: -0.76px;
+        }
+
+        p {
+            width: 575px;
+            display: block;
+            font-size: 30px;
+            letter-spacing: -0.6px;
+            line-height: 48px;
+            margin: 0 auto;
+        }
+
+        .about-signature {
+            width: 200px;
+            align-self: flex-end;
+            padding: 24px 151px 0 0;
+        }
+    }
+
+    
+    .about-image {
+        flex: 1;
+        overflow: hidden;
     }
 }
