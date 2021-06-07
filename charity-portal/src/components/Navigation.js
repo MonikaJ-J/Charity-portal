@@ -1,5 +1,6 @@
 import react from "react";
 import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 
 const Navigation = () => {
 
@@ -11,8 +12,10 @@ const Navigation = () => {
             </ul>
             <ul className="nav-bottom">
                 <li className="nav-link nav-bottom-link"><Link to="/">Start</Link></li>
-                <li className="nav-link nav-bottom-link">O co chodzi?</li>
-                <li className="nav-link nav-bottom-link">O nas</li>
+                <li className="nav-link nav-bottom-link">
+                    <LinkScroll to="four-steps" smooth={true} duration={850}>O co chodzi?</LinkScroll></li>
+                <li className="nav-link nav-bottom-link">
+                     <LinkScroll to="about-us" smooth={true} duration={850}>O nas</LinkScroll></li>
                 <li className="nav-link nav-bottom-link">Fundacja i organizacje</li>
                 <li className="nav-link nav-bottom-link">Kontakt</li>
             </ul>
